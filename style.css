@@ -32,3 +32,33 @@ body {
 .nft-details{
     margin: 5%;
 }
+
+.nft-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.nft-info {
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 18px;
+}
+.inlinePriceDays{
+    display: flex;
+    justify-content: space-between
+}
+
+.nft-price{
+    color: hsl(178, 100%, 50%);
+}
+
+.ethereum-icon {
+    height: 14px;
+}
+
+.clock-icon {
+    height: 14px;
+}
+.nft-dayleft {
+    color: hsl(215, 51%, 70%);
+}
