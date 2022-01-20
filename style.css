@@ -12,8 +12,8 @@ body {
 
 #cardlayout {
     background-color: hsl(216, 50%, 16%);
-    width: 300px;
-    height: 530px;
+    width: 320px;
+    height: 540px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
@@ -41,8 +41,8 @@ body {
     display: none;
     margin: 5%;
     position: absolute;
-    width: 270px;
-    height: 270px;
+    width: 288px;
+    height: 288px;
     top: 0;
     left: 0;
     z-index: 98;
@@ -53,8 +53,8 @@ body {
 .card .img-view{
     display: none;
     position: absolute;
-    top: 8em;
-    left: 8em;
+    top: 9em;
+    left: 9em;
     z-index: 99;
     
 }
@@ -79,6 +79,7 @@ body {
     color: hsl(0, 0%, 100%);
     font-size: 18px;
     margin-bottom: 18px;
+    font-weight: bold;
 }
 .nft-title:hover{
     color: hsl(178, 100%, 50%);
@@ -95,10 +96,11 @@ body {
 
 .nft-price{
     color: hsl(178, 100%, 50%);
+    font-weight: bold;
 }
 
 .ethereum-icon {
-    height: 14px;
+    height: 15px;
 }
 
 .clock-icon {
@@ -126,11 +128,14 @@ body {
 
 .nft-creator-image {
     margin-right: 10px;
+    
 }
-
 .nft-creator{
     display: flex;
+    font-size: 14px;
+    margin-top: 5px;
 }
+
 
 .creatorColor {
     color: hsl(215, 51%, 70%);
