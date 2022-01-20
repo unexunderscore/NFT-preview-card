@@ -13,22 +13,64 @@ body {
 #cardlayout {
     background-color: hsl(216, 50%, 16%);
     width: 300px;
-    height: 550px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 530px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
     
 
 }
 #cardlayout:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
   }
 
+.card{
+    position: relative;
+    display: inline-block;
+}
+
 .nft_img {
+
     margin: 5%;
     border-radius: 5px;
-    width:90%
+    width:90%;
+   
 }
+
+.card .img-top{
+    display: none;
+    margin: 5%;
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    background-color: turquoise;
+    border-radius: 5px;
+}
+
+.card .img-view{
+    display: none;
+    position: absolute;
+    top: 8em;
+    left: 8em;
+    z-index: 99;
+    
+}
+
+.card:hover .img-top{
+    opacity: 35%;
+    display: inline;
+   
+
+}
+.card:hover .img-view{
+    display: inline;
+   
+
+}
+
 .nft-details{
     margin: 5%;
 }
@@ -38,6 +80,9 @@ body {
     font-size: 18px;
     margin-bottom: 18px;
 }
+.nft-title:hover{
+    color: hsl(178, 100%, 50%);
+}
 
 .nft-info {
     color: hsl(215, 51%, 70%);
@@ -45,7 +90,7 @@ body {
 }
 .inlinePriceDays{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .nft-price{
@@ -61,4 +106,41 @@ body {
 }
 .nft-dayleft {
     color: hsl(215, 51%, 70%);
+}
+
+.hr-line {
+    color: hsl(215, 32%, 27%);
+    margin: 18px 0 18px 0;
+}
+
+.avatar-icon {
+    height: 24px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nft-creator-image {
+    margin-right: 10px;
+}
+
+.nft-creator{
+    display: flex;
+}
+
+.creatorColor {
+    color: hsl(215, 51%, 70%);
+}
+
+.creatorName{
+    margin-left: 8px;
+    color: hsl(0, 0%, 100%);
+}
+
+.creatorName:hover{
+    color: hsl(178, 100%, 50%);
 }
